@@ -1,0 +1,57 @@
+<div id="modal-content-wrapper">
+  <header id="modal-header">
+    <h1 id="modal-title">Editar usuario</h1>
+    <button id="modal-close" (click)="closeModal()">X</button>
+  </header>
+  <section id="modal-body">
+    <div id="modal-name" class="grid-item">
+      <span>Nombre</span>
+      <br />
+      <input
+        type="text"
+        class="text-type"
+        maxlength="45"
+        [(ngModel)]="data.firstName"
+      />
+    </div>
+    <div id="modal-apellido" class="grid-item">
+      <span>Apellido</span><br />
+      <input
+        type="text"
+        class="text-type"
+        maxlength="45"
+        [(ngModel)]="data.lastName"
+      />
+    </div>
+    <div id="modal-location" class="grid-item">
+      <span>Ubicacion</span><br />
+      <input
+        type="text"
+        class="text-type"
+        maxlength="90"
+        [(ngModel)]="data.location"
+      />
+    </div>
+    <div id="modal-cellphone" class="grid-item">
+      <span>celular</span><br />
+      <input
+        type="text"
+        class="text-type"
+        name="cellphone"
+        [(ngModel)]="data.phone"
+        mask="000 000 0000"
+      />
+    </div>
+
+    <form >
+      <input type="radio" name="genderm" value="m" [(ngModel)]="data.gender"   />Masculino
+      <span></span>
+      <input type="radio" name="genderf" value="f" [(ngModel)]="data.gender" />Femenino
+    </form>
+  </section>
+  <footer id="modal-footer">
+    <button id="btn-update" (click)="actionUpdate()">Actualizar</button>
+    <br />
+    <button id="btn-cancelar" (click)="closeModal()">Cancelar</button>
+  </footer>
+</div>

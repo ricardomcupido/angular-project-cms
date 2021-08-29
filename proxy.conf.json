@@ -1,0 +1,10 @@
+{
+    "/api": {
+      "target": "http://iacenter.victortalamantes.com/users",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }

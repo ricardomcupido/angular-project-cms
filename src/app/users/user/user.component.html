@@ -1,0 +1,33 @@
+<div class="user-component">
+  <div fxLayout="row wrap" fxLayoutGap="1.75em grid">
+    <div fxFlex="25%" *ngFor="let user of parentData">
+      <div class="card" id="{{ user.id }}">
+        <div class="card-header">
+          <div class="user-name">
+          {{ user.firstName }} {{ user.lastName }}
+          </div>
+
+          <div class="btn-modify" (click)="openModal(user)">
+            <img src="../../../assets/SVG/icono_editar.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="card-content">
+          <div class="photo" id="{{ user.gender }}">
+            <div id="genderImage" class="{{ user.gender }}"></div>
+          </div>
+
+          <div class="personal-info">
+            <div class="address">{{ user.location }}</div>
+
+            <div class="phone">
+              <span mask="000 000 0000">{{
+                user.phone | mask: "000 000 0000"
+              }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

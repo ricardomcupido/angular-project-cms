@@ -1,0 +1,23 @@
+<div class="users-component">
+  <div class="titulo">
+    <div id="imageTitle">
+      <img src="../../assets/SVG/icono_usuarios.svg" alt="" />
+    </div>
+
+    <div id="titleText">Usuarios</div>
+  </div>
+
+  <div class="controlInput">
+    <input
+      type="text"
+      name="search"
+      class="form-control"
+      placeholder=" Buscador"
+      [(ngModel)]="searchText"
+      (ngModelChange)="update()"
+    />
+    
+  </div>
+</div>
+
+<app-user [parentData]="userslist" [data]="userslist"></app-user>
