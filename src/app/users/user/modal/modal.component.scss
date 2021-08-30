@@ -4,57 +4,67 @@
   border-radius: 30px;
 }
 #modal-header {
-  height: 20%;
+  height: 15%;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  position: relative;
-  justify-content: flex-start;
-  margin: 0 5% 0 5%;
+  border-bottom-style: solid;
+  border-block-color: #ebebeb;
+  border-bottom-width: 3px;
+}
+
+#modal-header,
+#modal-title {
+  content: "";
+  flex-basis: 100%;
 }
 #modal-title {
-  flex: 0 1 auto;
   font-size: 22px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
 }
 #modal-close {
-  flex: 0 1 auto;
-  float: right;
-  height: 2em;
-  width: 2em;
-  margin-left: auto;
+  border: none;
+  background: none;
+  height: 5%;
+  width: 5%;
+  text-align: right;
+  cursor:pointer;
 }
 #modal-body {
   height: 60%;
+  padding-top: 3%;
   display: grid;
   grid-template-columns: auto auto;
   margin: 0 3% 0 3%;
 }
 
-.text-type{
+.text-type {
   background: #ebebeb;
   border: none;
-  border-radius: 20px;  
+  border-radius: 20px;
   height: 2em;
   width: 80%;
   padding-left: 10px;
 }
-.radio-btn{
+.radio-btn {
   background-color: red;
 }
-#modal-footer{
+#modal-footer {
   text-align: center;
 }
-#modal-footer button{
+#modal-footer button {
   height: 2.5em;
   width: 7em;
   border: none;
 }
-#btn-update{
+#btn-update {
   background: #427df0;
   border-radius: 5px;
-  
+  color: white;
+  cursor:pointer;
 }
-#btn-cancelar{
+#btn-cancelar {
   background: none;
+  cursor:pointer;
 }
