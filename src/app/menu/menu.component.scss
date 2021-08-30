@@ -1,9 +1,10 @@
 
-header { 
+.bodyContent{ 
   background-color: #427df0;
   width: 100%;  
   height: 6em;
   display: table;
+  
   
 }
 .align{
@@ -14,7 +15,9 @@ header {
 
 .titulo {
     color: white;
-    display: inline-block;    
+    display: inline-block;
+    font-family: "Poppins";   
+    font-weight: bold; 
     
 }
 .btn {  
@@ -23,17 +26,18 @@ header {
   float: right;
 	border: none;
 	border-radius: 0.5rem;
-  width: 10rem;
-  height: 1.75rem;
-	font-size: 1.25em;
+  width: 9rem;
+  height: 1.75rem;	
   cursor:pointer;
+  font-family: "Poppins"; 
+  
   
 }
 
 .btn span{
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: #427df0;
-  
+  font-weight: bold;
 }
 .btn img{
   height: 50%;

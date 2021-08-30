@@ -1,7 +1,7 @@
 .users-component {
   padding: 0% 10% 0 10%;
   height: 7em;
- 
+  font-family: "Poppins";
   display: flex;
   align-items: center;  
 
@@ -12,7 +12,7 @@
   align-items: center;
   text-align: left;
   font-size: 1.75em;
-;
+  font-weight: bold;
   
 }
 #imageTitle{
@@ -37,7 +37,7 @@ padding-left: 10%;
   background: #d9d9d9 url("../../assets/SVG/icono_buscar.svg")right no-repeat;
   background-size: 5%;
   background-position-x:right 10px;
-  
+  font-family: "Poppins";
   padding-left: 1%;
   padding-right: 3%;
   height: 2.4em;  

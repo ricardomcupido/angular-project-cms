@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Poppins";
+    src: url("assets/Poppins-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("assets/Poppins-Bold.otf");
+    font-weight: bold;
+  }
 html, body {
     margin: 0;
     padding: 0;
@@ -6,4 +15,4 @@ html, body {
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Robot, "Helvetica Neue", sans-serif; }
