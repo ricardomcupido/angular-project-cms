@@ -53,7 +53,12 @@
     </div>
 
     <form class="grid-item">
-      <input type="radio" [(ngModel)]="gender" value="m" />Masculino
+      <input
+        type="radio"
+        name="gender"
+        [(ngModel)]="gender"
+        value="m"
+      />Masculino
       <span></span>
       <input
         type="radio"
@@ -62,7 +67,6 @@
         value="f"
       />Femenino
     </form>
-    <div class="grid-item" id="incorrectData">Favor de revisar que sus datos estén completos</div>
   </section>
   <footer id="modal-footer">
     <button id="btn-agregar" (click)="actionAgregar()">Agregar</button>
