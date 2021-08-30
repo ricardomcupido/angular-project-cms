@@ -1,21 +1,23 @@
 .users-component {
-  width: 100%;
+  padding: 0% 10% 0 10%;
   height: 7em;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+ 
   display: flex;
-  align-items: center;
+  align-items: center;  
 
 }
 
-.titulo {
-  display: flex;
-  font-size: 1.75em;
-  padding-left: 10%; 
+.titulo {  
+  display: flex;  
   align-items: center;
+  text-align: left;
+  font-size: 1.75em;
+;
+  
 }
 #imageTitle{
-  display: flex;
+  display: flex;  
+  align-items: center;
   height: 2em;
   width: 2em; 
   
@@ -25,20 +27,21 @@
 padding-left: 10%;
 }
 .controlInput{
-  padding-right: 10%;
-  margin-left: auto;
+  flex: 1;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  
+ 
 }
 .form-control{
   background: #d9d9d9 url("../../assets/SVG/icono_buscar.svg")right no-repeat;
   background-size: 5%;
   background-position-x:right 10px;
-  padding-right: 40px;
-  padding-left: 30x;
+  
+  padding-left: 1%;
+  padding-right: 3%;
   height: 2.4em;  
-  width: 25em;
+  width: 40%;
   border-radius: 15px;   
   border: none; 
   
