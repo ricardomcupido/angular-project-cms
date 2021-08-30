@@ -7,12 +7,10 @@
   border-radius: 0.7rem;
   box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  position: relative;
+  
 }
 .card-header {
- 
-  background: #427df0;
-  width: 100%;
+  background: #427df0; 
   height: 30%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28,7 +26,7 @@
   font-weight: bold;
 }
 .btn-modify {
-  cursor:pointer;
+  cursor: pointer;
   margin-right: 7%;
   background: #1352cd;
   height: 30px;
@@ -39,11 +37,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 .btn-modify img {
   height: 50%;
-  
 }
 
 .card-content {
@@ -53,30 +49,26 @@
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  
 }
 .photo {
   height: 75%;
   width: 30%;
   margin-left: 5%;
   border-radius: 20px;
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
- .personal-info {
+.personal-info {
   margin-left: 5%;
   align-self: center;
-  
 }
 
-.m{
+.m {
   background: url("../../../assets/SVG/icono_hombre.svg") no-repeat;
   height: 75%;
   width: 50%;
-
-  
 }
 .f {
   background: url("../../../assets/SVG/icono_mujer.svg") no-repeat;
@@ -85,9 +77,9 @@
   width: 50%;
 }
 
-#m{
+#m {
   background-color: #1eaba5;
 }
-#f{
+#f {
   background-color: #ffc824;
 }

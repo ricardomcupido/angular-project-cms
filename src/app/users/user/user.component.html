@@ -1,6 +1,6 @@
 <div class="user-component">
   <div fxLayout="row wrap" fxLayoutGap="1.75em grid">
-    <div fxFlex="25%" *ngFor="let user of parentData">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="33%" *ngFor="let user of parentData">
       <div class="card" id="{{ user.id }}">
         <div class="card-header">
           <div class="user-name">
