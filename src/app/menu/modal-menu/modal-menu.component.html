@@ -1,8 +1,9 @@
 <div id="modal-content-wrapper">
   <div id="modal-header">
     <h1 id="modal-title">Editar usuario</h1>
-    <button id="modal-close" (click)="closeModal()"><img src="../../../assets/SVG/icono_cerrar.svg" alt=""></button>
-    
+    <button id="modal-close" (click)="closeModal()">
+      <img src="../../../assets/SVG/icono_cerrar.svg" alt="" />
+    </button>
   </div>
   <section id="modal-body">
     <div id="modal-name" class="grid-item">
@@ -48,27 +49,20 @@
         [(ngModel)]="cellphone"
         placeholder=""
         mask="000 000 0000"
-        
       />
     </div>
 
-    <form>
-      <input
-        type="radio"
-      
-        
-        [(ngModel)]="gender"
-        value="m"
-      />Masculino
+    <form class="grid-item">
+      <input type="radio" [(ngModel)]="gender" value="m" />Masculino
       <span></span>
       <input
         type="radio"
         name="gender"
-    
         [(ngModel)]="gender"
         value="f"
       />Femenino
     </form>
+    <div class="grid-item" id="incorrectData">Favor de revisar que sus datos estén completos</div>
   </section>
   <footer id="modal-footer">
     <button id="btn-agregar" (click)="actionAgregar()">Agregar</button>
